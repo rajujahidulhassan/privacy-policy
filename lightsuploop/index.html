@@ -205,6 +205,26 @@
                 font-size: 2rem;
             }
         }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-glow);
+        }
+
+        .back-link svg {
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+        }
     </style>
 </head>
 
@@ -348,7 +368,17 @@
         </main>
 
         <div class="footer">
-            &copy; 2026 Lightsup Loop. All rights reserved.
+            <a href="../" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Razoo Studio
+            </a>
+            <div style="margin-top: 40px;">
+                &copy; 2026 Razoo Studio. All rights reserved.
+            </div>
         </div>
     </div>
 </body>
